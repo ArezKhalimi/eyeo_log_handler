@@ -1,0 +1,7 @@
+filebeat.inputs:
+- type: log
+  enabled: true
+  paths:
+    - /Users/ice/Projects/eyeo/fakelog/*.log
+output.logstash:
+  hosts: ["localhost:5044"]
